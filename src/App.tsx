@@ -1,13 +1,21 @@
 import React from "react";
 
 import "./App.css";
+import Buttons from "./components/Buttons";
+import AddNewCard from "./components/AddNewCard";
+import Card from "./components/Card";
+import Navigation from "./components/Navigation";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header"></header>
+    <div>
+      <h1>Your Learning Flashcards</h1>
+      <Buttons />
+      <Card />
+      <Navigation />
+      <AddNewCard />
     </div>
   );
-}
+};
 
 export default App;
