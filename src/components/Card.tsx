@@ -1,6 +1,11 @@
 import React from "react";
+import { CardInterface } from "../CardInterface";
 
-const Card: React.FC = () => {
+interface CardProps {
+  createCard: (data: CardInterface, index: number) => React.DOMElement;
+}
+
+const Card: React.FC<CardProps> = ({ createCard }) => {
   return <div id="cards-container" className="cards"></div>;
 };
 
